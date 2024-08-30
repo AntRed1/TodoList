@@ -35,7 +35,7 @@ function updateCountdown() {
 
     if (timeLeft <= 1) {
       clearInterval(countdownInterval);
-      window.location.href = "/html/TodoList.html";
+      window.location.href = "../html/TodoList.html";
     }
   }, 1000);
 }
