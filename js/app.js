@@ -18,3 +18,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
   });
 });
+
+/* JavaScript for Countdown */
+
+// Time in seconds before redirect
+const redirectTime = 100;
+
+// Update the countdown and set a timeout for redirect
+function updateCountdown() {
+  const countdownElement = document.getElementById("countdown");
+  let timeLeft = redirectTime;
+
+  const countdownInterval = setInterval(() => {
+    timeLeft -= 2;
+    countdownElement.textContent = timeLeft;
+
+    if (timeLeft <= 1) {
+      clearInterval(countdownInterval);
+      window.location.href = "/html/TodoList.html";
+    }
+  }, 1000);
+}
+updateCountdown();

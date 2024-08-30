@@ -111,3 +111,7 @@ main > section {
 .card-body i {
   font-size: 1.2rem; /* Ajusta el tamaño de los iconos */
 }
+
+.countdown {
+  font-size: 2rem;
+}
