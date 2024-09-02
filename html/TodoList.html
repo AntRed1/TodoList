@@ -28,211 +28,222 @@
   </head>
 
   <body>
-    <header></header>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">TodoList</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="../index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Redes Sociales
-              </a>
-              <ul class="dropdown-menu">
-                <!-- <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li> -->
-                <li
-                  class="dropdown-item"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#anthonyOffcanvas"
-                  aria-controls="anthonyOffcanvas"
-                >
-                  Anthony Rojas ⚡
+    <header>
+      <div class="container pb-3">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">TodoList</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Redes Sociales
+                  </a>
+                  <ul class="dropdown-menu">
+                    <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li> -->
+                    <li
+                      class="dropdown-item"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#anthonyOffcanvas"
+                      aria-controls="anthonyOffcanvas"
+                    >
+                      Anthony Rojas ⚡
+                    </li>
+                  </ul>
                 </li>
               </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success me-lg-5" type="submit">
-              Search
-            </button>
-          </form>
-          <!-- Bootstrap V5.3 switch DarkMode/LightMode -->
-          <div class="dropdown-center form-check form-switch">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="darkModeSwitch"
-              checked
-            />
-            <label class="form-check-label" for="darkModeSwitch">
-              <i class="icon-light"></i>
-              <i class="icon-dark"></i>
-            </label>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success me-lg-5" type="submit">
+                  Search
+                </button>
+              </form>
+              <!-- Bootstrap V5.3 switch DarkMode/LightMode -->
+              <div class="dropdown-center form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="darkModeSwitch"
+                  checked
+                />
+                <label class="form-check-label" for="darkModeSwitch">
+                  <i class="icon-light"></i>
+                  <i class="icon-dark"></i>
+                </label>
+              </div>
+            </div>
           </div>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
 
     <main class="d-flex flex-grow-1">
-      <!-- Columna para redes sociales de Anthony Rojas -->
+      <div class="container">
+        <!-- Columna para redes sociales de Anthony Rojas -->
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-backdrop="static"
+          tabindex="-1"
+          id="anthonyOffcanvas"
+          aria-labelledby="anthonyOffcanvasLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="anthonyOffcanvasLabel">
+              Redes Sociales
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="list-unstyled social-media-list">
+              <!-- Anthony Rojas -->
+              <li class="alert alert-dark" role="alert">
+                <h4>
+                  Anthony Rojas
+                  <img
+                    src="https://github.com/AntRed1.png"
+                    alt="photo"
+                    class="img-fluid rounded-circle"
+                    style="width: 50px; height: 50px"
+                  />
+                </h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="mailto:anthonyatras@gmail.com"
+                      target="_blank"
+                      aria-label="Correo Electrónico"
+                    >
+                      <i class="fa-solid fa-envelope"></i>
+                      Correo
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/anthony-j-rojas-v-29b26a207/"
+                      target="_blank"
+                      aria-label="LinkedIn"
+                    >
+                      <i class="fa-brands fa-linkedin"></i>
+                      LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/AntRed1"
+                      target="_blank"
+                      aria-label="GitHub"
+                    >
+                      <i class="fa fa-github fs-3" aria-hidden="true"></i>
+                      GitHub
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      <div
-        class="offcanvas offcanvas-start"
-        data-bs-backdrop="static"
-        tabindex="-1"
-        id="anthonyOffcanvas"
-        aria-labelledby="anthonyOffcanvasLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="anthonyOffcanvasLabel">
-            Redes Sociales
-          </h5>
+        <!-- Botones de agregar una nueva tarea, eliminarla o editarla. -->
+        <div class="">
           <button
             type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="list-unstyled social-media-list">
-            <!-- Anthony Rojas -->
-            <li class="alert alert-dark" role="alert">
-              <h4>
-                Anthony Rojas
-                <img
-                  src="https://github.com/AntRed1.png"
-                  alt="photo"
-                  class="img-fluid rounded-circle"
-                  style="width: 50px; height: 50px"
-                />
-              </h4>
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    href="mailto:anthonyatras@gmail.com"
-                    target="_blank"
-                    aria-label="Correo Electrónico"
-                  >
-                    <i class="fa-solid fa-envelope"></i>
-                    Correo
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/anthony-j-rojas-v-29b26a207/"
-                    target="_blank"
-                    aria-label="LinkedIn"
-                  >
-                    <i class="fa-brands fa-linkedin"></i>
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/AntRed1"
-                    target="_blank"
-                    aria-label="GitHub"
-                  >
-                    <i class="fa fa-github fs-3" aria-hidden="true"></i>
-                    GitHub
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Botones de agregar una nueva tarea, eliminarla o editarla, -->
-      <div class="row py-3 alert">
-        <div class="container">
-          <button class="btn btn-danger" aria-label="Delete">
-            <i class="fa-solid fa-trash"></i>
-          </button>
-          <button class="btn btn-warning" aria-label="Edit">
-            <i class="fa-solid fa-pencil-alt"></i>
-          </button>
-          <button class="btn btn-success" aria-label="Mark as Completed">
+            class="btn btn-outline-primary rounded-circle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <i class="fa-solid fa-plus"></i>
           </button>
+          <ul class="dropdown-menu">
+            <button class="btn btn-danger" aria-label="Delete">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+            <button class="btn btn-warning" aria-label="Edit">
+              <i class="fa-solid fa-pencil-alt"></i>
+            </button>
+            <button class="btn btn-success" aria-label="Mark as Completed">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </ul>
         </div>
-      </div>
 
-      <!-- Sección central -->
-      <section class="flex-grow-1">
-        <article>
-          <div class="d-flex flex-column min-vh-100">
-            <div class="container">
-              <div class="row">
-                <!-- Principal -->
-                <div class="container-lg py-3">
-                  <div
-                    class="card text-bg-primary mb-3"
-                    style="max-width: 18rem"
-                  >
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                      <h5 class="card-title">Primary card title</h5>
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                      <div class="d-flex justify-content-between">
-                        <button class="btn btn-danger" aria-label="Delete">
-                          <i class="fa-solid fa-trash"></i>
-                        </button>
-                        <button class="btn btn-warning" aria-label="Edit">
-                          <i class="fa-solid fa-pencil-alt"></i>
-                        </button>
-                        <button
-                          class="btn btn-success"
-                          aria-label="Mark as Completed"
-                        >
-                          <i class="fa-solid fa-check"></i>
-                        </button>
+        <!-- Sección central -->
+        <section class="flex-grow-1">
+          <article>
+            <div class="d-flex flex-column min-vh-100">
+              <div class="container">
+                <div class="row">
+                  <!-- Principal -->
+                  <div class="container-lg py-3">
+                    <div
+                      class="card text-bg-primary mb-3"
+                      style="max-width: 18rem"
+                    >
+                      <div class="card-header">Header</div>
+                      <div class="card-body">
+                        <h5 class="card-title">Primary card title</h5>
+                        <p class="card-text">
+                          Some quick example text to build on the card title and
+                          make up the bulk of the card's content.
+                        </p>
+                        <div class="d-flex justify-content-between">
+                          <button class="btn btn-danger" aria-label="Delete">
+                            <i class="fa-solid fa-trash"></i>
+                          </button>
+                          <button class="btn btn-warning" aria-label="Edit">
+                            <i class="fa-solid fa-pencil-alt"></i>
+                          </button>
+                          <button
+                            class="btn btn-success"
+                            aria-label="Mark as Completed"
+                          >
+                            <i class="fa-solid fa-check"></i>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </article>
-      </section>
+          </article>
+        </section>
+      </div>
     </main>
 
     <!-- !! Footer de la Página -->
